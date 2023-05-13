@@ -16,3 +16,4 @@ export const db = mongoose
     .catch((err) => {
         console.log(clc.red("Failed to connect", err));
     });
+// Test 2
