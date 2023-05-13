@@ -7,7 +7,11 @@ import UserRouter from "./Routes/user.js";
 import TourRouter from "./Routes/tour.js";
 
 const app = express();
-dotenv.config();
+const corsOpt = {
+    origin: "https://tour-app-frontend.onrender.com",
+};
+
+dotenv.config(corsOpt);
 
 app.use(morgan("dev"));
 app.use(express.json({ limit: "30mb", extended: true }));
