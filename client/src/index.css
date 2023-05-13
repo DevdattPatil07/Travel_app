@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.header-text{
+  color: #606080;
+  font-weight: 500;
+  margin-top: 17px;
+  font-size: 17px;
+}
+
+.top-left{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.tag-card{
+  margin: 10px 0 0 20px;
+  color: #806a78;
+}
+
+.tourName{
+  color: #F48FB1;
+  font-size: 18px;
+  margin: 0 0 0 4px;
+  font-weight: 500;
+}
+
+.tagErrMsg{
+  color: #dc4c64;
+  margin-top: 5px;
+  text-align: left;
+  font-size: 14px;
+}
+
+h4:before,
+h4:after{
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+h4:before{
+  right: 0.5rem;
+  margin-left: -50%;
+}
+
+h4:after{
+  left:0.5rem;
+  margin-right:-50% ;
+}
+
+/*All 404 page CSS*/
+.page_404{ padding:50px 0; background:#fff; font-family: 'Arvo', serif; 
+}
+
+.page_404  img{ width:100%;}
+
+.four_zero_four_bg{
+ 
+ background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+ }
+ 
+ 
+ .four_zero_four_bg h1{
+ font-size:80px;
+ }
+ 
+  .four_zero_four_bg h3{
+			 font-size:80px;
+			 }
+			 
+			 .link_404{			 
+	color: #fff!important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;}
+	.contant_box_404{ margin-top:-50px;}
