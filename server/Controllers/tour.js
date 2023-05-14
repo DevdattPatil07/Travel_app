@@ -23,7 +23,7 @@ export const getTours = async (req, res) => {
     try {
         // const tours = await TourModel.find();
         // res.status(200).json(tours);
-        const limit = 3;
+        const limit = 6;
         const startIndex = (Number(page) - 1) * limit;
         const total = await TourModel.countDocuments({});
         const tours = await TourModel.find().limit(limit).skip(startIndex);
