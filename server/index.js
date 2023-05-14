@@ -2,9 +2,11 @@ import express from "express";
 import cors from "cors";
 import morgan from "morgan";
 import dotenv from "dotenv";
-import { db } from "./db.js";
+import { db, connect } from "./db.js";
 import UserRouter from "./Routes/user.js";
 import TourRouter from "./Routes/tour.js";
+
+await connect();
 
 const app = express();
 const corsOpt = {

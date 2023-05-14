@@ -89,8 +89,8 @@ export const googleSignIn = async (req, res) => {
         const email = payload.email;
         const name = payload.name;
         const googleId = payload.sub;
-        const hashedGoogleId = await bcrypt.hash(googleId, 12);
         try {
+            const hashedGoogleId = await bcrypt.hash(googleId, 12);
             const olduser = await UserModel.findOne({ email });
             if (olduser) {
                 const result = { _id: olduser._id.toString(), email, name };

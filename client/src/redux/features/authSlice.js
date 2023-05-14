@@ -113,8 +113,10 @@ const authSlice = createSlice({
             state.error = "";
         },
         [googleSignIn.rejected]: (state, action) => {
+            console.log(action.payload);
             state.loading = false;
             state.error = action.payload.message;
+
             state.user = null;
         },
     },
