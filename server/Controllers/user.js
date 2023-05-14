@@ -116,7 +116,7 @@ export const googleSignIn = async (req, res) => {
         } catch (error) {
             res.status(500).json({
                 message: "Something went wrong, Try again later",
-                error: error,
+                error: error.message,
             });
             console.log(error);
         }

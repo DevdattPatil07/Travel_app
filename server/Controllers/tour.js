@@ -27,6 +27,7 @@ export const getTours = async (req, res) => {
         const startIndex = (Number(page) - 1) * limit;
         const total = await TourModel.countDocuments({});
         const tours = await TourModel.find().limit(limit).skip(startIndex);
+        console.log(tours);
         res.json({
             data: tours,
             currentPage: Number(page),
@@ -36,7 +37,7 @@ export const getTours = async (req, res) => {
     } catch (error) {
         res.status(404).json({
             message: "Cannot get tours, Something went wrong",
-            error: error,
+            error: error.message,
         });
     }
 };
